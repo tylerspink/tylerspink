@@ -166,5 +166,13 @@ a reasonable thing to have public. It is **not** fine for the implementation:
 - One accidental commit of a `.env` becomes an instant, automated drain. Bots scrape
   GitHub for Solana keys continuously; the time-to-drain is measured in seconds.
 
-**Recommendation:** implementation lives in a new **private** repository (suggested name:
-`meme-desk` or `trench`). This planning repo can stay public or be moved — your call.
+**Decision (2026-09-20, D5):** everything — implementation *and* this planning content —
+moves to a new **private** repository. Nothing about this project remains on the public
+profile repo.
+
+Repository hardening required at Phase 0:
+- Private visibility, and it stays private
+- GitHub secret scanning + push protection enabled
+- Branch protection on `main`
+- A pre-commit hook running a secret scanner (gitleaks or similar) — push protection is
+  the backstop, not the first line

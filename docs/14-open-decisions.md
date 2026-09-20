@@ -1,45 +1,10 @@
 # 14 — Open Decisions
 
-Nine things I need from you before Phase 1 starts. Everything in this plan was written
-under the stated assumptions; where your answer differs, the affected documents change.
+Five open, four answered. Everything in this plan was written under the stated
+assumptions; where an answer differs, the affected documents change.
 
----
-
-### D1 — Total capital allocation *(blocks Phase 0)*
-
-How much are you prepared to put at risk in total, understanding that losing all of it
-is a live outcome and not a tail scenario?
-
-*Plan assumes:* $10,000–20,000, released in rungs up the ladder, plus ~$1,000 of
-separately-funded infrastructure budget.
-*Changes if different:* under ~$3,000, fixed costs dominate and the honest framing is a
-research project rather than a profit attempt. Over ~$50,000, we need an entity/tax
-conversation and a bigger discussion about liquidity capacity.
-
----
-
-### D2 — Drawdown tolerance *(blocks doc 06 finalization)*
-
-What drawdown makes you shut this down — not intellectually, but actually?
-
-*Plan assumes:* 25% hard stop with automatic halt.
-*Why it matters:* this is the single most consequential number in the system. If your
-real tolerance is 15%, position sizing has to halve and expected returns halve with it.
-Answer honestly rather than aspirationally — a breaker set above your true tolerance
-means you'll override it manually at the worst moment, which is strictly worse than
-having set it correctly.
-
----
-
-### D3 — Autonomy level *(blocks Phase 4)*
-
-Fully autonomous from Phase 4, or approval-gated trades initially?
-
-*Plan assumes:* fully autonomous within the risk engine's caps, starting at L1 micro size.
-*Alternative:* a push notification with a 60-second approve window for the first 50
-trades. Costs some fills, buys confidence. My recommendation is full autonomy at L1 —
-$10 positions are precisely the right size to be wrong at, and approval-gating changes
-the fill characteristics you're trying to measure.
+The four answered on 2026-09-20 all matched the plan's assumptions, so no document
+required revision. They are recorded in [Answered decisions](#answered-decisions) below.
 
 ---
 
@@ -50,16 +15,6 @@ Solana only, or Solana + Base?
 *Plan assumes:* Solana only for v1.
 *Recommendation:* Solana only. Adding Base doubles the execution stack for a fraction of
 the flow. Revisit at Phase 5.
-
----
-
-### D5 — Repository *(blocks Phase 0)*
-
-`tylerspink/tylerspink` is your **public profile repo** — its README renders on your
-GitHub profile. This planning doc is fine there. The implementation should not be.
-
-*Need:* confirmation to create a private repo (suggested: `meme-desk` or `trench`), and
-whether this planning content moves there too or stays public.
 
 ---
 
@@ -113,4 +68,7 @@ architectural consequences.
 
 | # | Decision | Answer | Date |
 |---|---|---|---|
-| — | — | — | — |
+| D1 | Total capital allocation | **$10,000–20,000**, released in rungs up the ladder, plus ~$1,000 separately-funded infrastructure budget. Matches the plan; the ladder in [doc 06](06-risk-engine.md) §6.5 can reach L4. | 2026-09-20 |
+| D2 | Drawdown tolerance | **25%** peak-to-trough, automatic halt, manual restart. Confirms the hard limit in [doc 06](06-risk-engine.md) §6.3. Note §6.7: this breaker is expected to fire eventually even if the edge is real. | 2026-09-20 |
+| D3 | Autonomy level | **Full autonomy from Phase 4 (L1)**, within the risk engine's caps. No per-trade approval gate. | 2026-09-20 |
+| D5 | Repository | **New private repository**, with this planning content moved there too. Implementation does not live on the public profile repo. | 2026-09-20 |

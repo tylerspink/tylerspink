@@ -3,6 +3,9 @@
 > **Status: planning only. No code, no keys, no capital committed.**
 > This repository currently contains the design brief for an autonomous meme coin
 > trading system. Nothing here executes trades.
+>
+> **⚠️ Pending migration.** This content is on a public profile repository and is
+> scheduled to move to a private repo (decision D5). It should not remain here.
 
 ---
 
